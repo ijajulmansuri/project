@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ui.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div id="preloader" class="h-screen w-screen flex items-center justify-center">
+        <div class="cube-loader">
+            <div class="cube-top"></div>
+            <div class="cube-wrapper">
+                <span style="--i:0" class="cube-span"></span>
+                <span style="--i:1" class="cube-span"></span>
+                <span style="--i:2" class="cube-span"></span>
+                <span style="--i:3" class="cube-span"></span>
+            </div>
+        </div>
+    </div>
+    <section class="hidden" id="mainContent">
+        <!-- Content -->
+        <div>
+            <h1 class="text-center text-3xl font-bold mt-8">Welcome to the Site</h1>
+            <p class="text-center mt-4">The main content is now visible!</p>
+        </div>
+        <!-- Element to contain animated typing -->
+        <span id="element"></span>
+
+        <div class="relative h-80 flex items-center justify-center">
+            <img class="z-10 h-80 w-64 object-cover rounded-3xl" src="https://images.unsplash.com/photo-1626209731723-4bf514fcdcd1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXZlbmdlcnN8ZW58MHx8MHx8fDA%3D" alt="">
+            <img class="absolute left-1/2 transform -translate-x-[80%] top-20 -rotate-12 h-80 w-64 object-cover rounded-3xl" src="https://images.unsplash.com/photo-1608889335941-32ac5f2041b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGF2ZW5nZXJzfGVufDB8fDB8fHww" alt="">
+            <img class="absolute h-80 w-64 right-1/2 transform translate-y-[80%] bottom-20 rotate-12 object-cover rounded-3xl" src="https://images.unsplash.com/photo-1608889825146-c9276dc26bdc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGF2ZW5nZXJzfGVufDB8fDB8fHww" alt="">
+        </div>
+
+    </section>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/[email protected]/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+
+    <script>
+        // Simulate content loading
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            const mainContent = document.getElementById('mainContent');
+
+            // Remove the preloader after a delay
+            setTimeout(() => {
+                preloader.style.display = 'none';
+                mainContent.classList.remove('hidden');
+            }, 2000); // Adjust delay as needed
+        });
+    </script>
+</body>
+
+</html>

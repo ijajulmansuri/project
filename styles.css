@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-bounce {
+    animation: bounce 1s infinite;
+  }
+  .delay-200 {
+    animation-delay: 0.5s;
+  }
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+}
