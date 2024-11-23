@@ -6,9 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>project</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -195,7 +201,7 @@
   <!------------------------------------- Pre-header End -------------------------------------->
 
   <!------------------------------------- header Section Start -------------------------------------->
-  <!-- ***** Header Area Start ***** -->
+  <!-- ** Header Area Start ** -->
   <header class="sticky top-0 z-50 bg-gray-100 shadow-md">
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between py-4">
@@ -248,7 +254,7 @@
       </div>
     </div>
   </header>
-  <!-- ***** Header Area End ***** -->
+  <!-- ** Header Area End ** -->
 
 
 
@@ -256,7 +262,7 @@
 
   <!------------------------------------- about us Section start -------------------------------------->
 
-  <!-- ***** Main Banner Section Start ***** -->
+  <!-- ** Main Banner Section Start ** -->
   <div class="main-banner bg-white" id="top">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap items-center">
@@ -289,9 +295,9 @@
       </div>
     </div>
   </div>
-  <!-- ***** Main Banner Section End ***** -->
+  <!-- ** Main Banner Section End ** -->
 
-  <!-- ***** About Section Start ***** -->
+  <!-- ** About Section Start ** -->
   <div id="about" class="about bg-gray-50 py-12">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap items-center">
@@ -358,7 +364,7 @@
       </div>
     </div>
   </div>
-  <!-- ***** About Section End ***** -->
+  <!-- ** About Section End ** -->
 
   <!------------------------------------- about us Section End -------------------------------------->
 
@@ -375,39 +381,37 @@
       </div>
 
       <!-- Services Menu -->
-      <div class=" grid md:grid-cols-4 gap-6">
+      <div class=" grid md:grid-cols-4 gap-6" id="tabs">
         <!-- Service Tabs -->
-        <div class=" md:col-span-1">
-          <div class="space-y-4">
-            <a href="#software-development"
-              class="w-full flex items-center gap-4 p-4 bg-white shadow-md hover:bg-red-500 hover:text-white transition rounded-lg focus:ring focus:ring-red-300 active">
-              <img src="./images/sd.png" alt="Software Development" class="w-8 h-8">
-              <span>Software Development</span>
-            </a>
+        <ul class=" md:col-span-1 space-y-4">
+          <li
+            class="w-full flex items-center gap-4 p-4 bg-white shadow-md hover:bg-red-500 hover:text-white transition rounded-lg focus:ring focus:ring-red-300 active">
+            <img src="./images/sd.png" alt="Software Development" class="w-8 h-8">
+            <a href="#software-development">Software Development</a>
+          </li>
 
-            <a href="#website-development"
-              class="w-full flex items-center gap-4 p-4 bg-white shadow-md hover:bg-red-500 hover:text-white transition rounded-lg focus:ring focus:ring-red-300">
-              <img src="./images/wds.jpg" alt="Website Development" class="w-8 h-8">
-              <span>Website Development</span>
-            </a>
+          <li
+            class="w-full flex items-center gap-4 p-4 bg-white shadow-md hover:bg-red-500 hover:text-white transition rounded-lg focus:ring focus:ring-red-300">
+            <img src="./images/wds.jpg" alt="Website Development" class="w-8 h-8">
+            <a href="#website-development">Website Development</a>
+          </li>
 
-            <button
-              class="w-full flex items-center gap-4 p-4 bg-white shadow-md hover:bg-red-500 hover:text-white transition rounded-lg focus:ring focus:ring-red-300">
-              <img src="./images/sds.jpg" alt="Application Development" class="w-8 h-8">
-              <span>Application Development</span>
-            </button>
-            <button
-              class="w-full flex items-center gap-4 p-4 bg-white shadow-md hover:bg-red-500 hover:text-white transition rounded-lg focus:ring focus:ring-red-300">
-              <img src="./images/gd.png" alt="Cyber Security" class="w-8 h-8">
-              <span>Cyber Security</span>
-            </button>
-            <button
-              class="w-full flex items-center gap-4 p-4 bg-white shadow-md hover:bg-red-500 hover:text-white transition rounded-lg focus:ring focus:ring-red-300">
-              <img src="./images/sds.jpg" alt="Graphic Designing" class="w-8 h-8">
-              <span>Graphic Designing</span>
-            </button>
-          </div>
-        </div>
+          <li
+            class="w-full flex items-center gap-4 p-4 bg-white shadow-md hover:bg-red-500 hover:text-white transition rounded-lg focus:ring focus:ring-red-300">
+            <img src="./images/sds.jpg" alt="Application Development" class="w-8 h-8">
+            <a href="#application-development">Application Development</a>
+          </li>
+          <li
+            class="w-full flex items-center gap-4 p-4 bg-white shadow-md hover:bg-red-500 hover:text-white transition rounded-lg focus:ring focus:ring-red-300">
+            <img src="./images/gd.png" alt="Cyber Security" class="w-8 h-8">
+            <a href="#cyber-security">Cyber Security</a>
+          </li>
+          <li
+            class="w-full flex items-center gap-4 p-4 bg-white shadow-md hover:bg-red-500 hover:text-white transition rounded-lg focus:ring focus:ring-red-300">
+            <img src="./images/sds.jpg" alt="Graphic Designing" class="w-8 h-8">
+            <a href="#graphic-designing">Graphic Designing</a>
+          </li>
+        </ul>
 
         <!-- Service Details -->
         <div id="software-development" class="md:col-span-3">
@@ -439,140 +443,234 @@
             </div>
           </div>
         </div>
+
+        <!-- Service Details -->
+        <div id="website-development" class="md:col-span-3">
+          <div class="bg-white p-6 shadow-md rounded-lg">
+            <div class="grid md:grid-cols-2 gap-6">
+              <!-- Left Text -->
+              <div>
+                <h4 class="text-2xl font-bold text-red-500 mb-4">Website Development</h4>
+                <p class="text-gray-700 mb-4">
+                  Elevate your online presence with our web development expertise. We design and build
+                  captivating websites that engage visitors and drive results. Whether you need a
+                  personal blog or a complex e-commerce platform, we've got you covered.
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                  <li><i class="fa fa-check text-green-500"></i> Mobile Responsiveness</li>
+                  <li><i class="fa fa-check text-green-500"></i> User-Centric Design</li>
+                  <li><i class="fa fa-check text-green-500"></i> SEO Optimization</li>
+                  <li><i class="fa fa-check text-green-500"></i> E-commerce Solutions</li>
+                  <li><i class="fa fa-check text-green-500"></i> Content Management</li>
+                  <li><i class="fa fa-check text-green-500"></i> Security Features</li>
+                </ul>
+                <p class="mt-4 font-semibold text-gray-800">"Your Website, Your Identity Online"</p>
+              </div>
+
+              <!-- Right Image -->
+              <div class="flex justify-center">
+                <img src="./images/gd.png" alt="Software Development" class="w-full rounded-lg">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="application-development" class="md:col-span-3">
+          <div class="bg-white p-6 shadow-md rounded-lg">
+            <div class="grid md:grid-cols-2 gap-6">
+              <!-- Left Text -->
+              <div>
+                <h4 class="text-2xl font-bold text-red-500 mb-4">Application Development</h4>
+                <p class="text-gray-700 mb-4">
+                  Elevate your online presence with our web development expertise. We design and build
+                  captivating websites that engage visitors and drive results. Whether you need a
+                  personal blog or a complex e-commerce platform, we've got you covered.
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                  <li><i class="fa fa-check text-green-500"></i> Mobile Responsiveness</li>
+                  <li><i class="fa fa-check text-green-500"></i> User-Centric Design</li>
+                  <li><i class="fa fa-check text-green-500"></i> SEO Optimization</li>
+                  <li><i class="fa fa-check text-green-500"></i> E-commerce Solutions</li>
+                  <li><i class="fa fa-check text-green-500"></i> Content Management</li>
+                  <li><i class="fa fa-check text-green-500"></i> Security Features</li>
+                </ul>
+                <p class="mt-4 font-semibold text-gray-800">"Your Website, Your Identity Online"</p>
+              </div>
+        
+              <!-- Right Image -->
+              <div class="flex justify-center">
+                <img src="./images/gd.png" alt="Software Development" class="w-full rounded-lg">
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+        <div id="cyber-security" class="md:col-span-3">
+          <div class="bg-white p-6 shadow-md rounded-lg">
+            <div class="grid md:grid-cols-2 gap-6">
+              <!-- Left Text -->
+              <div>
+                <h4 class="text-2xl font-bold text-red-500 mb-4">Cyber Security</h4>
+                <p class="text-gray-700 mb-4">
+                  Elevate your online presence with our web development expertise. We design and build
+                  captivating websites that engage visitors and drive results. Whether you need a
+                  personal blog or a complex e-commerce platform, we've got you covered.
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                  <li><i class="fa fa-check text-green-500"></i> Mobile Responsiveness</li>
+                  <li><i class="fa fa-check text-green-500"></i> User-Centric Design</li>
+                  <li><i class="fa fa-check text-green-500"></i> SEO Optimization</li>
+                  <li><i class="fa fa-check text-green-500"></i> E-commerce Solutions</li>
+                  <li><i class="fa fa-check text-green-500"></i> Content Management</li>
+                  <li><i class="fa fa-check text-green-500"></i> Security Features</li>
+                </ul>
+                <p class="mt-4 font-semibold text-gray-800">"Your Website, Your Identity Online"</p>
+              </div>
+        
+              <!-- Right Image -->
+              <div class="flex justify-center">
+                <img src="./images/gd.png" alt="Software Development" class="w-full rounded-lg">
+              </div>
+        
+            </div>
+          </div>
+        </div>
+
+        <div id="graphic-designing" class="md:col-span-3">
+          <div class="bg-white p-6 shadow-md rounded-lg">
+            <div class="grid md:grid-cols-2 gap-6">
+              <!-- Left Text -->
+              <div>
+                <h4 class="text-2xl font-bold text-red-500 mb-4">Graphic Designing</h4>
+                <p class="text-gray-700 mb-4">
+                  Elevate your online presence with our web development expertise. We design and build
+                  captivating websites that engage visitors and drive results. Whether you need a
+                  personal blog or a complex e-commerce platform, we've got you covered.
+                </p>
+                <ul class="space-y-2 text-gray-600">
+                  <li><i class="fa fa-check text-green-500"></i> Mobile Responsiveness</li>
+                  <li><i class="fa fa-check text-green-500"></i> User-Centric Design</li>
+                  <li><i class="fa fa-check text-green-500"></i> SEO Optimization</li>
+                  <li><i class="fa fa-check text-green-500"></i> E-commerce Solutions</li>
+                  <li><i class="fa fa-check text-green-500"></i> Content Management</li>
+                  <li><i class="fa fa-check text-green-500"></i> Security Features</li>
+                </ul>
+                <p class="mt-4 font-semibold text-gray-800">"Your Website, Your Identity Online"</p>
+              </div>
+        
+              <!-- Right Image -->
+              <div class="flex justify-center">
+                <img src="./images/gd.png" alt="Software Development" class="w-full rounded-lg">
+              </div>
+        
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Service Details -->
-      <div id="website-development" class="md:col-span-3">
-        <div class="bg-white p-6 shadow-md rounded-lg">
-          <div class="grid md:grid-cols-2 gap-6">
-            <!-- Left Text -->
-            <div>
-              <h4 class="text-2xl font-bold text-red-500 mb-4">Website Development</h4>
-              <p class="text-gray-700 mb-4">
-                Elevate your online presence with our web development expertise. We design and build
-                captivating websites that engage visitors and drive results. Whether you need a
-                personal blog or a complex e-commerce platform, we've got you covered.
-              </p>
-              <ul class="space-y-2 text-gray-600">
-                <li><i class="fa fa-check text-green-500"></i> Mobile Responsiveness</li>
-                <li><i class="fa fa-check text-green-500"></i> User-Centric Design</li>
-                <li><i class="fa fa-check text-green-500"></i> SEO Optimization</li>
-                <li><i class="fa fa-check text-green-500"></i> E-commerce Solutions</li>
-                <li><i class="fa fa-check text-green-500"></i> Content Management</li>
-                <li><i class="fa fa-check text-green-500"></i> Security Features</li>
-              </ul>
-              <p class="mt-4 font-semibold text-gray-800">"Your Website, Your Identity Online"</p>
-            </div>
-
-            <!-- Right Image -->
-            <div class="flex justify-center">
-              <img src="./images/gd.png" alt="Software Development" class="w-full rounded-lg">
-            </div>
-
-          </div>
-
-          
   </section>
 
   <!------------------------------------- service Section End -------------------------------------->
   <!------------------------------------- Project Section Start -------------------------------------->
-<!-- Portfolio Section -->
-<section id="portfolio" class="our-portfolio py-12 bg-gray-100">
-  <div class="container mx-auto px-4">
-    <!-- Section Heading -->
-    <div class="flex flex-col lg:flex-row items-start lg:items-center">
-      <div class="lg:w-5/12 mb-6 lg:mb-0">
-        <h6 class="text-red-500 font-semibold mb-2">Our Portfolio</h6>
-        <h4 class="text-3xl font-bold text-gray-800 mb-4">
-          See Our Recent <em class="text-red-500">Projects</em>
-        </h4>
-        <div class="w-16 h-1 bg-red-500"></div>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="our-portfolio py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <!-- Section Heading -->
+      <div class="flex flex-col lg:flex-row items-start lg:items-center">
+        <div class="lg:w-5/12 mb-6 lg:mb-0">
+          <h6 class="text-red-500 font-semibold mb-2">Our Portfolio</h6>
+          <h4 class="text-3xl font-bold text-gray-800 mb-4">
+            See Our Recent <em class="text-red-500">Projects</em>
+          </h4>
+          <div class="w-16 h-1 bg-red-500"></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Portfolio Items -->
-  <div class="container mx-auto px-4">
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Portfolio Item -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <a href="#">
-          <div class="relative">
-            <img src="./images/css.jpg" alt="Web Scrapper" class="w-full h-48 object-cover">
-          </div>
-          <div class="p-4">
-            <h4 class="text-lg font-bold text-gray-800">Web Scrapper</h4>
-            <span class="text-sm text-gray-600">Python</span>
-          </div>
-        </a>
-      </div>
+    <!-- Portfolio Items -->
+    <div class="container mx-auto px-4">
+      <div class="owl-carousel gap-6">
+        <!-- Portfolio Item -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <a href="#">
+            <div class="relative">
+              <img src="./images/css.jpg" alt="Web Scrapper" class="w-full h-48 object-cover">
+            </div>
+            <div class="p-4">
+              <h4 class="text-lg font-bold text-gray-800">Web Scrapper</h4>
+              <span class="text-sm text-gray-600">Python</span>
+            </div>
+          </a>
+        </div>
 
-      <!-- Portfolio Item -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <a href="#">
-          <div class="relative">
-            <img src="./images/ws.jpg" alt="ChatGPT Clone" class="w-full h-48 object-cover">
-          </div>
-          <div class="p-4">
-            <h4 class="text-lg font-bold text-gray-800">ChatGPT Clone</h4>
-            <span class="text-sm text-gray-600">AI</span>
-          </div>
-        </a>
-      </div>
+        <!-- Portfolio Item -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <a href="#">
+            <div class="relative">
+              <img src="./images/ws.jpg" alt="ChatGPT Clone" class="w-full h-48 object-cover">
+            </div>
+            <div class="p-4">
+              <h4 class="text-lg font-bold text-gray-800">ChatGPT Clone</h4>
+              <span class="text-sm text-gray-600">AI</span>
+            </div>
+          </a>
+        </div>
 
-      <!-- Portfolio Item -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <a href="#">
-          <div class="relative">
-            <img src="./images/image.png" alt="College Management System" class="w-full h-48 object-cover">
-          </div>
-          <div class="p-4">
-            <h4 class="text-lg font-bold text-gray-800">College Management System</h4>
-            <span class="text-sm text-gray-600">PHP</span>
-          </div>
-        </a>
-      </div>
+        <!-- Portfolio Item -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <a href="#">
+            <div class="relative">
+              <img src="./images/image.png" alt="College Management System" class="w-full h-48 object-cover">
+            </div>
+            <div class="p-4">
+              <h4 class="text-lg font-bold text-gray-800">College Management System</h4>
+              <span class="text-sm text-gray-600">PHP</span>
+            </div>
+          </a>
+        </div>
 
-      <!-- Portfolio Item -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <a href="#">
-          <div class="relative">
-            <img src="./images/sds.jpg" alt="AI Health Care Bot" class="w-full h-48 object-cover">
-          </div>
-          <div class="p-4">
-            <h4 class="text-lg font-bold text-gray-800">AI Health Care Bot</h4>
-            <span class="text-sm text-gray-600">AI</span>
-          </div>
-        </a>
-      </div>
-      <!-- Portfolio Item -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <a href="#">
-          <div class="relative">
-            <img src="./images/sds.jpg" alt="AI Health Care Bot" class="w-full h-48 object-cover">
-          </div>
-          <div class="p-4">
-            <h4 class="text-lg font-bold text-gray-800">AI Health Care Bot</h4>
-            <span class="text-sm text-gray-600">AI</span>
-          </div>
-        </a>
-      </div>
+        <!-- Portfolio Item -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <a href="#">
+            <div class="relative">
+              <img src="./images/sds.jpg" alt="AI Health Care Bot" class="w-full h-48 object-cover">
+            </div>
+            <div class="p-4">
+              <h4 class="text-lg font-bold text-gray-800">AI Health Care Bot</h4>
+              <span class="text-sm text-gray-600">AI</span>
+            </div>
+          </a>
+        </div>
+        <!-- Portfolio Item -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <a href="#">
+            <div class="relative">
+              <img src="./images/sds.jpg" alt="AI Health Care Bot" class="w-full h-48 object-cover">
+            </div>
+            <div class="p-4">
+              <h4 class="text-lg font-bold text-gray-800">AI Health Care Bot</h4>
+              <span class="text-sm text-gray-600">AI</span>
+            </div>
+          </a>
+        </div>
 
-      <!-- Portfolio Item -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <a href="#">
-          <div class="relative">
-            <img src="./images/ws.jpg" alt="Cyber Threat Detection" class="w-full h-48 object-cover">
-          </div>
-          <div class="p-4">
-            <h4 class="text-lg font-bold text-gray-800">Cyber Threat Detection</h4>
-            <span class="text-sm text-gray-600">Cyber Security</span>
-          </div>
-        </a>
+        <!-- Portfolio Item -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <a href="#">
+            <div class="relative">
+              <img src="./images/ws.jpg" alt="Cyber Threat Detection" class="w-full h-48 object-cover">
+            </div>
+            <div class="p-4">
+              <h4 class="text-lg font-bold text-gray-800">Cyber Threat Detection</h4>
+              <span class="text-sm text-gray-600">Cyber Security</span>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
   <!------------------------------------- Project Section End -------------------------------------->
@@ -582,64 +680,73 @@
 
 
   <!------------------------------------- Team Section strat -------------------------------------->
-<!-- Team Section -->
-<section id="team" class="our-team py-12 bg-gray-100">
-  <div class="container mx-auto px-4">
-    <!-- Section Heading -->
-    <div class="text-center mb-12">
-      <h6 class="text-red-500 font-semibold mb-2">Our Team</h6>
-      <h4 class="text-3xl font-bold text-gray-800">
-        Meet Our Team of <em class="text-red-500">Innovators</em>
-      </h4>
-      <div class="w-16 h-1 bg-red-500 mx-auto mt-4"></div>
+  <!-- Team Section -->
+  <section id="team" class="our-team py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <!-- Section Heading -->
+      <div class="text-center mb-12">
+        <h6 class="text-red-500 font-semibold mb-2">Our Team</h6>
+        <h4 class="text-3xl font-bold text-gray-800">
+          Meet Our Team of <em class="text-red-500">Innovators</em>
+        </h4>
+        <div class="w-16 h-1 bg-red-500 mx-auto mt-4"></div>
+      </div>
+
+      <!-- Team Members -->
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Team Member 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center p-6">
+          <img src="./images/istockpho.jpg" alt="Ashutosh Palhare" class="w-full  mx-auto rounded-lg mb-4">
+          <h3 class="text-xl font-bold text-gray-800">Ashutosh Palhare</h3>
+          <h5 class="text-sm text-gray-600 mb-4">Founder & CEO</h5>
+          <div class="flex justify-center space-x-4 text-gray-500">
+            <a href="https://github.com/ashutosh786palhare" class="hover:text-red-500"><i
+                class="fa-brands fa-github text-2xl"></i></a>
+            <a href="https://in.linkedin.com/in/ashutosh786palhare" class="hover:text-red-500"><i
+                class="fa-brands fa-linkedin text-2xl"></i></a>
+            <a href="https://www.instagram.com/ashutosh786palhare/" class="hover:text-red-500">
+              <i class="fa-brands fa-instagram text-2xl"></i></a>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center p-6">
+          <img src="./images/12.jpg" alt="Bhakti Gujar" class="w-full  mx-auto rounded-lg mb-4">
+          <h3 class="text-xl font-bold text-gray-800">Bhakti Gujar</h3>
+          <h5 class="text-sm text-gray-600 mb-4">Co-Founder</h5>
+          <div class="flex justify-center space-x-4 text-gray-500">
+            <a href="https://github.com/devculture4you" class="hover:text-red-500"><i
+                class="fa-brands fa-github text-2xl"></i></a>
+            <a href="https://www.linkedin.com/in/bhakti-gujar02" class="hover:text-red-500"><i
+                class="fa-brands fa-linkedin text-2xl"></i></a>
+            <a href="https://www.instagram.com/bhaktigujar_2153/" class="hover:text-red-500">
+              <i class="fa-brands fa-instagram text-2xl"></i></a>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center p-6">
+          <img src="./images/image copy.png" alt="Aniket Pandore" class="w-full  mx-auto rounded-lg mb-4">
+          <h3 class="text-xl font-bold text-gray-800">Aniket Pandore</h3>
+          <h5 class="text-sm text-gray-600 mb-4">CTO</h5>
+          <div class="flex justify-center space-x-4 text-gray-500">
+            <a href="https://github.com/Aniket-Pandore" class="hover:text-red-500">
+              <i class="fa-brands fa-github text-2xl"></i></a>
+            <a href="https://www.linkedin.com/in/aniket-pandore" class="hover:text-red-500">
+              <i class="fa-brands fa-linkedin text-2xl"></i></i></a>
+            <a href="https://www.instagram.com/aniket_pandore" class="hover:text-red-500">
+              <i class="fa-brands fa-instagram text-2xl"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Team Members -->
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      <!-- Team Member 1 -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center p-6">
-        <img src="./images/istockpho.jpg" alt="Ashutosh Palhare" class="w-full  mx-auto rounded-lg mb-4">
-        <h3 class="text-xl font-bold text-gray-800">Ashutosh Palhare</h3>
-        <h5 class="text-sm text-gray-600 mb-4">Founder & CEO</h5>
-        <div class="flex justify-center space-x-4 text-gray-500">
-          <a href="https://github.com/ashutosh786palhare" class="hover:text-red-500"><i class="ri-github-fill text-2xl"></i></a>
-          <a href="https://in.linkedin.com/in/ashutosh786palhare" class="hover:text-red-500"><i class="ri-linkedin-box-fill text-2xl"></i></a>
-          <a href="https://www.instagram.com/ashutosh786palhare/" class="hover:text-red-500"><i class="ri-instagram-fill text-2xl"></i></a>
-        </div>
-      </div>
-
-      <!-- Team Member 2 -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center p-6">
-        <img src="./images/12.jpg" alt="Bhakti Gujar" class="w-full  mx-auto rounded-lg mb-4">
-        <h3 class="text-xl font-bold text-gray-800">Bhakti Gujar</h3>
-        <h5 class="text-sm text-gray-600 mb-4">Co-Founder</h5>
-        <div class="flex justify-center space-x-4 text-gray-500">
-          <a href="https://github.com/devculture4you" class="hover:text-red-500"><i class="ri-github-fill text-2xl"></i></a>
-          <a href="https://www.linkedin.com/in/bhakti-gujar02" class="hover:text-red-500"><i class="ri-linkedin-box-fill text-2xl"></i></a>
-          <a href="https://www.instagram.com/bhaktigujar_2153/" class="hover:text-red-500"><i class="ri-instagram-fill text-2xl"></i></a>
-        </div>
-      </div>
-
-      <!-- Team Member 3 -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center p-6">
-        <img src="./images/image copy.png" alt="Aniket Pandore" class="w-full  mx-auto rounded-lg mb-4">
-        <h3 class="text-xl font-bold text-gray-800">Aniket Pandore</h3>
-        <h5 class="text-sm text-gray-600 mb-4">CTO</h5>
-        <div class="flex justify-center space-x-4 text-gray-500">
-          <a href="https://github.com/Aniket-Pandore" class="hover:text-red-500"><i class="ri-github-fill text-2xl"></i></a>
-          <a href="https://www.linkedin.com/in/aniket-pandore" class="hover:text-red-500"><i class="ri-linkedin-box-fill text-2xl"></i></a>
-          <a href="https://www.instagram.com/aniket_pandore" class="hover:text-red-500"><i class="ri-instagram-fill text-2xl"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
   <!------------------------------------- Team Section End  -------------------------------------->
-   <!------------------------------------- contact us Sectionstart -------------------------------------->
+  <!------------------------------------- contact us Sectionstart -------------------------------------->
 
-   <section id="contact" class="contact-us py-12 bg-gray-100">
+  <section id="contact" class="contact-us py-12 bg-gray-100">
     <div class="container mx-auto px-4">
       <!-- Section Heading -->
       <div class="text-center mb-12">
@@ -649,23 +756,18 @@
         </h4>
         <div class="w-16 h-1 bg-red-500 mx-auto mt-4"></div>
       </div>
-  
+
       <!-- Contact Content -->
       <div class="flex flex-col lg:flex-row lg:space-x-8">
         <!-- Map Section -->
         <div class="w-full lg:w-5/12 mb-8 lg:mb-0">
-          <div class="rounded-lg overflow-hidden shadow-lg">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.3892097541893!2d74.95944477850057!3d19.610651387826664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdc819e437151d3%3A0x9e434f835c196c83!2sAP%20Cyber%20Cafe!5e0!3m2!1sen!2sin!4v1693596264457!5m2!1sen!2sin" 
-              width="100%" 
-              height="400" 
-              frameborder="0" 
-              class="w-full h-full border-none" 
-              allowfullscreen>
-            </iframe>
-          </div>
+            <iframe class="h-full w-full rounded-lg shadow-lg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6866.062757611742!2d76.82464070818122!3d30.633073219836827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fead56ff4104b%3A0xc8d7e3b603c04725!2sMotiaz%20Royal%20Citi!5e0!3m2!1sen!2sin!4v1732259416063!5m2!1sen!2sin"
+               style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
         </div>
-  
+
         <!-- Contact Form Section -->
         <div class="w-full lg:w-7/12">
           <div class="bg-white rounded-lg shadow-lg p-8">
@@ -684,41 +786,22 @@
                 <a href="#" class="text-gray-700 hover:text-red-500">@xyz</a>
               </div>
             </div>
-  
+
             <!-- Form -->
             <form action="" method="post" class="flex flex-col space-y-6">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <input 
-                  type="text" 
-                  name="name" 
-                  id="name" 
-                  placeholder="Name" 
-                  required 
+                <input type="text" name="name" id="name" placeholder="Name" required
                   class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500">
-                <input 
-                  type="email" 
-                  name="email" 
-                  id="email" 
-                  placeholder="Your Email" 
-                  required 
+                <input type="email" name="email" id="email" placeholder="Your Email" required
                   class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500">
               </div>
-              <input 
-                type="text" 
-                name="subject" 
-                id="subject" 
-                placeholder="Subject" 
+              <input type="text" name="subject" id="subject" placeholder="Subject"
                 class="w-full border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500">
-              <textarea 
-                name="message" 
-                id="message" 
-                placeholder="Message" 
-                required 
+              <textarea name="message" id="message" placeholder="Message" required
                 class="w-full h-32 border border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-red-500">
               </textarea>
               <div class="text-center">
-                <button 
-                  type="submit" 
+                <button type="submit"
                   class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition focus:outline-none focus:ring-2 focus:ring-red-300">
                   Send Message Now
                 </button>
@@ -732,119 +815,120 @@
 
   <!-------------------------------------Contact us  Section End -------------------------------------->
 
-  
-<!-------------------------------------footer Section start -------------------------------------->
 
-<footer class="bg-gray-900 text-gray-300">
-  <!-- Footer CTA -->
-  <div class="container mx-auto px-4 py-10">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Find Us -->
-      <div class="flex items-center">
-        <i class="fas fa-map-marker-alt text-red-500 text-2xl mr-4"></i>
-        <div>
-          <h4 class="font-bold text-lg">Find us</h4>
-          <span>@xyz</span>
+  <!-------------------------------------footer Section start -------------------------------------->
+
+  <footer class="bg-gray-900 text-gray-300">
+    <!-- Footer CTA -->
+    <div class="container mx-auto px-4 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Find Us -->
+        <div class="flex items-center">
+          <i class="fas fa-map-marker-alt text-red-500 text-2xl mr-4"></i>
+          <div>
+            <h4 class="font-bold text-lg">Find us</h4>
+            <span>@xyz</span>
+          </div>
         </div>
-      </div>
-      <!-- Call Us -->
-      <div class="flex items-center">
-        <i class="fas fa-phone text-red-500 text-2xl mr-4"></i>
-        <div>
-          <h4 class="font-bold text-lg">Call us</h4>
-          <span>+9100000000</span>
+        <!-- Call Us -->
+        <div class="flex items-center">
+          <i class="fas fa-phone text-red-500 text-2xl mr-4"></i>
+          <div>
+            <h4 class="font-bold text-lg">Call us</h4>
+            <span>+9100000000</span>
+          </div>
         </div>
-      </div>
-      <!-- Mail Us -->
-      <div class="flex items-center">
-        <i class="far fa-envelope-open text-red-500 text-2xl mr-4"></i>
-        <div>
-          <h4 class="font-bold text-lg">Mail us</h4>
-          <span>abc@gmail.com</span>
+        <!-- Mail Us -->
+        <div class="flex items-center">
+          <i class="far fa-envelope-open text-red-500 text-2xl mr-4"></i>
+          <div>
+            <h4 class="font-bold text-lg">Mail us</h4>
+            <span>abc@gmail.com</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Footer Content -->
-  <div class="bg-gray-800 py-10">
-    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-      <!-- About Section -->
-      <div>
-        <a href="index.html" class="block mb-4">
-          <img src="assets/images/lg.png" alt="logo" class="w-32">
-        </a>
-        <p class="mb-4">
-          This is my Dev Culture, where innovation meets expertise. We specialize in software development, web design,
-          cybersecurity, and more. Our mission is simple: to empower your digital success.
-        </p>
-        <div class="flex space-x-4">
-          <a href="#" class="text-gray-300 hover:text-red-500">
-            <i class="fab fa-github text-xl"></i>
+    <!-- Footer Content -->
+    <div class="bg-gray-800 py-10">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- About Section -->
+        <div>
+          <a href="index.html" class="block mb-4">
+            <img src="assets/images/lg.png" alt="logo" class="w-32">
           </a>
-          <a href="#" class="text-gray-300 hover:text-red-500">
-            <i class="fab fa-linkedin text-xl"></i>
-          </a>
-          <a href="#" class="text-gray-300 hover:text-red-500">
-            <i class="fab fa-instagram text-xl"></i>
-          </a>
-          <a href="#" class="text-gray-300 hover:text-red-500">
-            <i class="fab fa-facebook-f text-xl"></i>
-          </a>
-          <a href="#" class="text-gray-300 hover:text-red-500">
-            <i class="fab fa-youtube text-xl"></i>
-          </a>
-          <a href="#" class="text-gray-300 hover:text-red-500">
-            <i class="fab fa-twitter text-xl"></i>
-          </a>
+          <p class="mb-4">
+            This is my Dev Culture, where innovation meets expertise. We specialize in software development, web design,
+            cybersecurity, and more. Our mission is simple: to empower your digital success.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-red-500">
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-red-500">
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-red-500">
+              <i class="fab fa-instagram text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-red-500">
+              <i class="fab fa-facebook-f text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-red-500">
+              <i class="fab fa-youtube text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-red-500">
+              <i class="fab fa-twitter text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Useful Links -->
+        <div>
+          <h3 class="text-lg font-bold text-white mb-4">Useful Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-red-500">Home</a></li>
+            <li><a href="#" class="hover:text-red-500">About</a></li>
+            <li><a href="#" class="hover:text-red-500">Services</a></li>
+            <li><a href="#" class="hover:text-red-500">Portfolio</a></li>
+            <li><a href="#" class="hover:text-red-500">Contact</a></li>
+            <li><a href="#" class="hover:text-red-500">Expert Team</a></li>
+            <li><a href="#" class="hover:text-red-500">Latest News</a></li>
+          </ul>
+        </div>
+
+        <!-- Subscribe -->
+        <div>
+          <h3 class="text-lg font-bold text-white mb-4">Subscribe</h3>
+          <p class="mb-4">Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+          <form class="flex">
+            <input type="email" placeholder="Email Address"
+              class="w-full px-4 py-2 text-gray-700 rounded-l-lg focus:outline-none">
+            <button class="bg-red-500 text-white px-4 rounded-r-lg hover:bg-red-600">
+              <i class="fab fa-telegram-plane"></i>
+            </button>
+          </form>
         </div>
       </div>
+    </div>
 
-      <!-- Useful Links -->
-      <div>
-        <h3 class="text-lg font-bold text-white mb-4">Useful Links</h3>
-        <ul class="space-y-2">
+    <!-- Footer Bottom -->
+    <div class="bg-gray-700 py-4">
+      <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+        <p class="text-sm text-gray-400">Copyright &copy; 2024, All Right Reserved <a
+            href="https://ashutosh786palhare.github.io/" class="text-red-500">Ijajul Mansuri</a></p>
+        <ul class="flex space-x-4 text-sm text-gray-400">
           <li><a href="#" class="hover:text-red-500">Home</a></li>
-          <li><a href="#" class="hover:text-red-500">About</a></li>
-          <li><a href="#" class="hover:text-red-500">Services</a></li>
-          <li><a href="#" class="hover:text-red-500">Portfolio</a></li>
+          <li><a href="#" class="hover:text-red-500">Terms</a></li>
+          <li><a href="#" class="hover:text-red-500">Privacy</a></li>
+          <li><a href="#" class="hover:text-red-500">Policy</a></li>
           <li><a href="#" class="hover:text-red-500">Contact</a></li>
-          <li><a href="#" class="hover:text-red-500">Expert Team</a></li>
-          <li><a href="#" class="hover:text-red-500">Latest News</a></li>
         </ul>
       </div>
-
-      <!-- Subscribe -->
-      <div>
-        <h3 class="text-lg font-bold text-white mb-4">Subscribe</h3>
-        <p class="mb-4">Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-        <form class="flex">
-          <input type="email" placeholder="Email Address" 
-            class="w-full px-4 py-2 text-gray-700 rounded-l-lg focus:outline-none">
-          <button class="bg-red-500 text-white px-4 rounded-r-lg hover:bg-red-600">
-            <i class="fab fa-telegram-plane"></i>
-          </button>
-        </form>
-      </div>
     </div>
-  </div>
+  </footer>
 
-  <!-- Footer Bottom -->
-  <div class="bg-gray-700 py-4">
-    <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
-      <p class="text-sm text-gray-400">Copyright &copy; 2023, All Right Reserved <a href="https://ashutosh786palhare.github.io/" class="text-red-500">By AP</a></p>
-      <ul class="flex space-x-4 text-sm text-gray-400">
-        <li><a href="#" class="hover:text-red-500">Home</a></li>
-        <li><a href="#" class="hover:text-red-500">Terms</a></li>
-        <li><a href="#" class="hover:text-red-500">Privacy</a></li>
-        <li><a href="#" class="hover:text-red-500">Policy</a></li>
-        <li><a href="#" class="hover:text-red-500">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
-
-<!-------------------------------------footer Section End  -------------------------------------->
+  <!-------------------------------------footer Section End  -------------------------------------->
 
 
   <script>
@@ -870,6 +954,24 @@
     })
 
 
+  </script>
+
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
+
+  <script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      items: 3,
+      loop: true,
+      margin: 20,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true
+    });
   </script>
 
 
